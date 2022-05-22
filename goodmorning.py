@@ -1,0 +1,3 @@
+import Stocks
+
+stock = Stocks()
