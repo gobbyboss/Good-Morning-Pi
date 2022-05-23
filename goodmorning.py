@@ -1,3 +1,14 @@
 import Stocks
+from time import sleep
 
-stock = Stocks()
+class Goodmorning():
+    def __init__(self):
+        self.stocks = Stocks.Stocks()
+    
+    def run(self):
+        self.stocks.update()
+
+client = Goodmorning()
+while True:
+    client.run()
+    sleep(20)
